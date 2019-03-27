@@ -1,0 +1,11 @@
+C:\Users\Trent\OneDrive\Documents\Visual Studio 2017\Projects\GLR\GLR\GLR\bin\Debug\netstandard2.0\GLR.deps.json
+C:\Users\Trent\OneDrive\Documents\Visual Studio 2017\Projects\GLR\GLR\GLR\bin\Debug\netstandard2.0\GLR.dll
+C:\Users\Trent\OneDrive\Documents\Visual Studio 2017\Projects\GLR\GLR\GLR\bin\Debug\netstandard2.0\GLR.pdb
+C:\Users\Trent\OneDrive\Documents\Visual Studio 2017\Projects\GLR\GLR\GLR\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Trent\OneDrive\Documents\Visual Studio 2017\Projects\GLR\GLR\GLR\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Trent\OneDrive\Documents\Visual Studio 2017\Projects\GLR\GLR\GLR\obj\Debug\netstandard2.0\GLR.csproj.CoreCompileInputs.cache
+C:\Users\Trent\OneDrive\Documents\Visual Studio 2017\Projects\GLR\GLR\GLR\obj\Debug\netstandard2.0\GLR.AssemblyInfoInputs.cache
+C:\Users\Trent\OneDrive\Documents\Visual Studio 2017\Projects\GLR\GLR\GLR\obj\Debug\netstandard2.0\GLR.AssemblyInfo.cs
+C:\Users\Trent\OneDrive\Documents\Visual Studio 2017\Projects\GLR\GLR\GLR\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Trent\OneDrive\Documents\Visual Studio 2017\Projects\GLR\GLR\GLR\obj\Debug\netstandard2.0\GLR.dll
+C:\Users\Trent\OneDrive\Documents\Visual Studio 2017\Projects\GLR\GLR\GLR\obj\Debug\netstandard2.0\GLR.pdb

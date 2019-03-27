@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GLR"
+             x:Class="GLR.MainPage">
+
+  
+        <!-- Place new controls here -->
+    <StackLayout Orientation="Vertical">
+        <Label Text="Frieght Bill" 
+           FontSize="Medium"/>
+        <StackLayout Orientation="Horizontal">
+                <Entry Text="Driver"/>
+                <Entry Text="Date"/>
+        </StackLayout>
+        
+        <Entry Text="Customer"/>
+        <StackLayout Orientation="Horizontal">
+            <Entry Text="origin"/>
+            <Entry Text="Destination"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Entry Text="FB#"/>
+            <Entry Text="PO#"/>
+        </StackLayout>
+        <Entry Text="Description"/>
+        <StackLayout Orientation="Horizontal">
+            <Entry Text="Contact"/>
+            <Entry Text="Truck"/>
+        </StackLayout>
+        <Entry Text="Comments"/>
+    </StackLayout>
+</ContentPage>
