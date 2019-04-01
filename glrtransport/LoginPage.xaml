@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="glrtransport.LoginPage">
+    
+    <StackLayout BackgroundColor="#033F63">
+        
+        <Label Text="GLR TRANSPORT"
+               TextColor="white"
+               FontSize="40"
+               HorizontalTextAlignment="center"
+               Margin="0, 220, 0, 0"/>
+        
+        <Entry x:Name="usernameEntry"
+               Placeholder="username"
+               Margin="80, 50, 80, 0"
+               BackgroundColor="White"/>
+        
+        
+        <Entry x:Name="passwordEntry" 
+               Placeholder="password"
+               Margin="80, 0, 80, 0"
+               BackgroundColor="white"
+               IsPassword="true"/>
+        
+        
+        <Button Text="Login"
+                BackgroundColor="#FEDC97"
+                TextColor="#033F63"
+                Margin="140, 10, 140, 0"
+                BorderRadius="20"
+                Clicked="LoginButtonClicked"/>
+        
+    </StackLayout>
+    
+</ContentPage>

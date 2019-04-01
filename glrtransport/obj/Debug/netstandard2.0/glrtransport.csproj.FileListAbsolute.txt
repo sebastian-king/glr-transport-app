@@ -1,0 +1,13 @@
+/Users/brendannyambati/Desktop/glr/glrtransport/glrtransport/bin/Debug/netstandard2.0/glrtransport.deps.json
+/Users/brendannyambati/Desktop/glr/glrtransport/glrtransport/bin/Debug/netstandard2.0/glrtransport.dll
+/Users/brendannyambati/Desktop/glr/glrtransport/glrtransport/bin/Debug/netstandard2.0/glrtransport.pdb
+/Users/brendannyambati/Desktop/glr/glrtransport/glrtransport/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/brendannyambati/Desktop/glr/glrtransport/glrtransport/obj/Debug/netstandard2.0/LoginPage.xaml.g.cs
+/Users/brendannyambati/Desktop/glr/glrtransport/glrtransport/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/brendannyambati/Desktop/glr/glrtransport/glrtransport/obj/Debug/netstandard2.0/glrtransport.csproj.CoreCompileInputs.cache
+/Users/brendannyambati/Desktop/glr/glrtransport/glrtransport/obj/Debug/netstandard2.0/glrtransport.AssemblyInfoInputs.cache
+/Users/brendannyambati/Desktop/glr/glrtransport/glrtransport/obj/Debug/netstandard2.0/glrtransport.AssemblyInfo.cs
+/Users/brendannyambati/Desktop/glr/glrtransport/glrtransport/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/brendannyambati/Desktop/glr/glrtransport/glrtransport/obj/Debug/netstandard2.0/glrtransport.dll
+/Users/brendannyambati/Desktop/glr/glrtransport/glrtransport/obj/Debug/netstandard2.0/glrtransport.pdb
+/Users/brendannyambati/Desktop/glr/glrtransport/glrtransport/obj/Debug/netstandard2.0/glrtransport.csprojAssemblyReference.cache
