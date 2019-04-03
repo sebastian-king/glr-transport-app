@@ -2,32 +2,62 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GLR"
-             x:Class="GLR.MainPage">
+             x:Class="GLR.MainPage"
+             BackgroundColor="DarkBlue">
 
-  
-        <!-- Place new controls here -->
-    <StackLayout Orientation="Vertical">
-        <Label Text="Frieght Bill" 
-           FontSize="Medium"/>
-        <StackLayout Orientation="Horizontal">
-                <Entry Text="Driver"/>
-                <Entry Text="Date"/>
+
+    <!-- Place new controls here -->
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Frieght Bill" 
+           FontSize="Medium"
+               TextColor="LightBlue"/>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Entry Placeholder="Driver"
+                       WidthRequest="150"
+                       BackgroundColor="BlueViolet"/>
+                </StackLayout>
+                <StackLayout>
+                    <Entry Placeholder="Date"
+                       WidthRequest="100"
+                       BackgroundColor="BlueViolet"/>
+                </StackLayout>
+            </StackLayout>
+
+            <Entry Placeholder="Customer"
+               WidthRequest="150"
+               BackgroundColor="BlueViolet"/>
+            <Entry Placeholder="origin"
+                   WidthRequest="150"
+                   BackgroundColor="BlueViolet"/>
+            <Entry Placeholder="Destination"
+                   WidthRequest="150"
+                   BackgroundColor="BlueViolet"/>
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="FB#"
+                   WidthRequest="100"
+                   BackgroundColor="BlueViolet"/>
+                <Entry Placeholder="PO#"
+                   WidthRequest="100"
+                   BackgroundColor="BlueViolet"/>
+            </StackLayout>
+            <Entry Placeholder="Description"
+               WidthRequest="300"
+               HeightRequest="300"
+               BackgroundColor="BlueViolet"/>
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Contact"
+                   WidthRequest="150"
+                   BackgroundColor="BlueViolet"/>
+                <Entry Placeholder="Truck"
+                   WidthRequest="150"
+                   BackgroundColor="BlueViolet"/>
+            </StackLayout>
+            <Entry Placeholder="Comments"
+               WidthRequest="300"
+               HeightRequest="300"
+               BackgroundColor="BlueViolet"/>
         </StackLayout>
-        
-        <Entry Text="Customer"/>
-        <StackLayout Orientation="Horizontal">
-            <Entry Text="origin"/>
-            <Entry Text="Destination"/>
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <Entry Text="FB#"/>
-            <Entry Text="PO#"/>
-        </StackLayout>
-        <Entry Text="Description"/>
-        <StackLayout Orientation="Horizontal">
-            <Entry Text="Contact"/>
-            <Entry Text="Truck"/>
-        </StackLayout>
-        <Entry Text="Comments"/>
-    </StackLayout>
+    </ScrollView>
 </ContentPage>
