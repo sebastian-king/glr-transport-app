@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="glr.Views.AddFreightBillPage">
+    
+    <StackLayout Spacing="0" 
+             x:Name="layout">
+
+        <Entry Placeholder="Driver"/>
+        <Entry Placeholder="Customer"
+               Text="{Binding Customer}"/>
+        <Entry Placeholder="From"
+               Text="{Binding FromLocation}"/>
+        <Entry Placeholder="To"
+               Text="{Binding ToLocation}"/>
+        <Entry Placeholder="Freight Bill #"
+               Text="{Binding FreightBillNumber}"/>
+        <Entry Placeholder="PO#"
+               Text="{Binding PoNumber}"/>
+        <Entry Placeholder="Truck"
+               Text="{Binding TruckNumber}"/>
+        <Entry Placeholder="Phone number"
+               Text="{Binding PhoneNumber}"/>
+        <Entry Placeholder="Email address"
+               Text="{Binding EmailAddress}"/>
+        <Button Text="save"
+                BackgroundColor="Black"
+                TextColor="White"
+                Margin="100, 100"
+                Clicked="OnSaveButtonClicked"/>
+    
+    </StackLayout>
+    
+</ContentPage>
