@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="glr.Views.AddFreightBillPage">
+<ScrollView>
+    <StackLayout Spacing="0" 
+             x:Name="layout">
+             
+        <Frame Margin="10">
+            <StackLayout>
+                <Label Text="To:"/>
+                <Entry Placeholder="Street" Text="{Binding ToStreet}"/>
+                <Entry Placeholder="City" Text="{Binding ToCity}"/>
+                <Entry Placeholder="State" Text="{Binding ToState}"/>
+                <Entry Placeholder="Zip" Text="{Binding ToZip}"/>
+            </StackLayout>
+        </Frame>   
+        
+        <Frame Margin="10">
+            <StackLayout>
+                <Label Text="From:"/>
+                <Entry Placeholder="Street"/>
+                <Entry Placeholder="City"/>
+                <Entry Placeholder="State"/>
+                <Entry Placeholder="Zip"/>
+            </StackLayout>
+        </Frame>   
+        <Frame Margin="10">
+            <StackLayout>
+                <Entry Placeholder="Driver"/>
+                <Entry Placeholder="Customer"
+                       Text="{Binding Customer}"/>
+                <Entry Placeholder="Freight Bill #"
+                       Text="{Binding FreightBillNumber}"/>
+                <Entry Placeholder="PO#"
+                       Text="{Binding PoNumber}"/>
+                <Entry Placeholder="Truck"
+                       Text="{Binding TruckNumber}"/>
+                <Entry Placeholder="Phone number"
+                       Text="{Binding PhoneNumber}"/>
+                <Entry Placeholder="Email address"
+                       Text="{Binding EmailAddress}"/>
+                
+                <StackLayout>
+                    <Button Text="save"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        Margin="100, 0"
+                        CornerRadius="20"
+                        Clicked="OnSaveButtonClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+    </StackLayout>
+            
+</ScrollView>     
+    
+</ContentPage>
