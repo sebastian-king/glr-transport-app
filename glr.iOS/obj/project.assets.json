@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -12,6 +21,19 @@
         },
         "runtime": {
           "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -48,26 +70,6 @@
         },
         "runtime": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
-        }
-      },
-      "SuaveControls.FloatingActionButton/2018.1.5": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.3.4.231"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "System.Xml",
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -232,7 +234,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "SuaveControls.FloatingActionButton": "2018.1.5",
+          "SQLiteNetExtensions": "2.1.0",
           "Xam.Plugins.Messaging": "5.2.0",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "3.6.0.264807",
@@ -247,6 +249,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -257,6 +268,19 @@
         },
         "runtime": {
           "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -293,26 +317,6 @@
         },
         "runtime": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
-        }
-      },
-      "SuaveControls.FloatingActionButton/2018.1.5": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.3.4.231"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "System.Xml",
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -477,7 +481,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "SuaveControls.FloatingActionButton": "2018.1.5",
+          "SQLiteNetExtensions": "2.1.0",
           "Xam.Plugins.Messaging": "5.2.0",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "3.6.0.264807",
@@ -492,6 +496,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -502,6 +515,19 @@
         },
         "runtime": {
           "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -538,26 +564,6 @@
         },
         "runtime": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
-        }
-      },
-      "SuaveControls.FloatingActionButton/2018.1.5": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.3.4.231"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "System.Xml",
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -722,7 +728,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "SuaveControls.FloatingActionButton": "2018.1.5",
+          "SQLiteNetExtensions": "2.1.0",
           "Xam.Plugins.Messaging": "5.2.0",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "3.6.0.264807",
@@ -737,6 +743,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -747,6 +762,19 @@
         },
         "runtime": {
           "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -783,26 +811,6 @@
         },
         "runtime": {
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
-        }
-      },
-      "SuaveControls.FloatingActionButton/2018.1.5": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.3.4.231"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "System.Xml",
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -967,7 +975,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "SuaveControls.FloatingActionButton": "2018.1.5",
+          "SQLiteNetExtensions": "2.1.0",
           "Xam.Plugins.Messaging": "5.2.0",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "3.6.0.264807",
@@ -983,6 +991,31 @@
     }
   },
   "libraries": {
+    "Newtonsoft.Json/9.0.1": {
+      "sha512": "2okXpTRwUcgQb06put5LwwCjtgoFo74zkPksjcvOpnIjx7TagGW5IoBCAA4luZx1+tfiIhoNqoiI7Y7zwWGyKA==",
+      "type": "package",
+      "path": "newtonsoft.json/9.0.1",
+      "files": [
+        ".signature.p7s",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.9.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
     "sqlite-net-pcl/1.5.231": {
       "sha512": "Sy+K+Wm2RZ+4b1uLHsaXvfR92Or71XxPXa2Id6msSOVkZKh+c+PUk/HQOAgxyhm3lhvysL0mK6Gd6mI69NJ9AA==",
       "type": "package",
@@ -996,6 +1029,34 @@
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.xml",
         "sqlite-net-pcl.1.5.231.nupkg.sha512",
         "sqlite-net-pcl.nuspec"
+      ]
+    },
+    "SQLiteNetExtensions/2.1.0": {
+      "sha512": "X1ufKPcyQM7ExzdmdunHHSv+R3Pi7xeT9OG1wrPo6K2IR2Ku+VuEClQ1YlbxwfaKM4+NR4Ut2g0gHbJ5dllleA==",
+      "type": "package",
+      "path": "sqlitenetextensions/2.1.0",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard1.1/SQLiteNetExtensions.dll",
+        "lib/netstandard1.1/SQLiteNetExtensions.pdb",
+        "sqlitenetextensions.2.1.0.nupkg.sha512",
+        "sqlitenetextensions.nuspec",
+        "src/SQLiteNetExtensions/Attributes/CascadeOperation.cs",
+        "src/SQLiteNetExtensions/Attributes/ForeignKeyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/ManyToManyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/ManyToOneAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/OneToManyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/OneToOneAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/RelationshipAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/TextBlobAttribute.cs",
+        "src/SQLiteNetExtensions/Exceptions/IncorrectRelationshipException.cs",
+        "src/SQLiteNetExtensions/Extensions/ReadOperations.cs",
+        "src/SQLiteNetExtensions/Extensions/ReflectionExtensions.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/ITextBlobSerializer.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/Serializers/JsonBlobSerializer.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/TextBlobOperations.cs",
+        "src/SQLiteNetExtensions/Extensions/WriteOperations.cs",
+        "src/SQLiteNetExtensions/Properties/AssemblyInfo.cs"
       ]
     },
     "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -1080,21 +1141,6 @@
         "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll",
         "sqlitepclraw.provider.sqlite3.ios_unified.1.1.11.nupkg.sha512",
         "sqlitepclraw.provider.sqlite3.ios_unified.nuspec"
-      ]
-    },
-    "SuaveControls.FloatingActionButton/2018.1.5": {
-      "sha512": "OTad3J+U+ZMFM3lIWnkNhWB3SZgcV7wBEjHk2SBbmdyRJBNI1dEr3DACZIKBBJOlcUxRPUaficxMjVhSN827/g==",
-      "type": "package",
-      "path": "suavecontrols.floatingactionbutton/2018.1.5",
-      "files": [
-        ".signature.p7s",
-        "lib/monoandroid80/SuaveControls.FloatingActionButton.Droid.dll",
-        "lib/monoandroid80/SuaveControls.FloatingActionButton.dll",
-        "lib/portable45-net45+win8+wpa81/SuaveControls.FloatingActionButton.dll",
-        "lib/xamarinios10/SuaveControls.FloatingActionButton.dll",
-        "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll",
-        "suavecontrols.floatingactionbutton.2018.1.5.nupkg.sha512",
-        "suavecontrols.floatingactionbutton.nuspec"
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
@@ -1389,7 +1435,6 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
-      "SuaveControls.FloatingActionButton >= 2018.1.5",
       "Xamarin.Essentials >= 1.0.1",
       "Xamarin.Forms >= 3.6.0.264807",
       "glr >= 1.0.0"
@@ -1401,11 +1446,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/brendannyambati/Desktop/capstone/glr/glr.iOS/glr.iOS.csproj",
+      "projectUniqueName": "/Users/brendannyambati/Desktop/cap/glr-transport-app/glr.iOS/glr.iOS.csproj",
       "projectName": "glr.iOS",
-      "projectPath": "/Users/brendannyambati/Desktop/capstone/glr/glr.iOS/glr.iOS.csproj",
+      "projectPath": "/Users/brendannyambati/Desktop/cap/glr-transport-app/glr.iOS/glr.iOS.csproj",
       "packagesPath": "/Users/brendannyambati/.nuget/packages/",
-      "outputPath": "/Users/brendannyambati/Desktop/capstone/glr/glr.iOS/obj/",
+      "outputPath": "/Users/brendannyambati/Desktop/cap/glr-transport-app/glr.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1420,8 +1465,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/brendannyambati/Desktop/capstone/glr/glr/glr.csproj": {
-              "projectPath": "/Users/brendannyambati/Desktop/capstone/glr/glr/glr.csproj"
+            "/Users/brendannyambati/Desktop/cap/glr-transport-app/glr/glr.csproj": {
+              "projectPath": "/Users/brendannyambati/Desktop/cap/glr-transport-app/glr/glr.csproj"
             }
           }
         }
@@ -1430,10 +1475,6 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
-          "SuaveControls.FloatingActionButton": {
-            "target": "Package",
-            "version": "[2018.1.5, )"
-          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.0.1, )"

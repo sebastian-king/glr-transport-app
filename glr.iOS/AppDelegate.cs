@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using SuaveControls.FloatingActionButton.iOS.Renderers;
 using Foundation;
 using UIKit;
 
@@ -24,7 +23,6 @@ namespace glr.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-            FloatingActionButtonRenderer.InitRenderer();
             return base.FinishedLaunching(app, options);
         }
     }

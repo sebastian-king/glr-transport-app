@@ -1,5 +1,5 @@
---cache=/Users/brendannyambati/Desktop/capstone/glr/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/mtouch-cache
---sim=/Users/brendannyambati/Desktop/capstone/glr/glr.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/glr.iOS.app
+--cache=/Users/brendannyambati/Desktop/cap/glr-transport-app/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/mtouch-cache
+--sim=/Users/brendannyambati/Desktop/cap/glr-transport-app/glr.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/glr.iOS.app
 --executable=glr.iOS
 --debug
 --sgen-conc
@@ -10,9 +10,9 @@
 --aot-options=-O=-float32
 --http-message-handler=NSUrlSessionHandler
 --abi=x86_64
---symbollist=/Users/brendannyambati/Desktop/capstone/glr/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/mtouch-symbols.list
+--symbollist=/Users/brendannyambati/Desktop/cap/glr-transport-app/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/mtouch-symbols.list
 --dsym=no
--r=/Users/brendannyambati/Desktop/capstone/glr/glr/bin/Debug/netstandard2.0/glr.dll
+-r=/Users/brendannyambati/Desktop/cap/glr-transport-app/glr/bin/Debug/netstandard2.0/glr.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll
@@ -163,13 +163,13 @@
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XDocument.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XmlDocument.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll
+-r=/Users/brendannyambati/.nuget/packages/newtonsoft.json/9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll
 -r=/Users/brendannyambati/.nuget/packages/sqlite-net-pcl/1.5.231/lib/netstandard1.1/SQLite-net.dll
+-r=/Users/brendannyambati/.nuget/packages/sqlitenetextensions/2.1.0/lib/netstandard1.1/SQLiteNetExtensions.dll
 -r=/Users/brendannyambati/.nuget/packages/sqlitepclraw.bundle_green/1.1.11/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll
 -r=/Users/brendannyambati/.nuget/packages/sqlitepclraw.bundle_green/1.1.11/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll
 -r=/Users/brendannyambati/.nuget/packages/sqlitepclraw.core/1.1.11/lib/Xamarin.iOS10/SQLitePCLRaw.core.dll
 -r=/Users/brendannyambati/.nuget/packages/sqlitepclraw.provider.sqlite3.ios_unified/1.1.11/lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll
--r=/Users/brendannyambati/.nuget/packages/suavecontrols.floatingactionbutton/2018.1.5/lib/xamarinios10/SuaveControls.FloatingActionButton.dll
--r=/Users/brendannyambati/.nuget/packages/suavecontrols.floatingactionbutton/2018.1.5/lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll
 -r=/Users/brendannyambati/.nuget/packages/xam.plugins.messaging/5.2.0/lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll
 -r=/Users/brendannyambati/.nuget/packages/xam.plugins.messaging/5.2.0/lib/Xamarin.iOS10/Plugin.Messaging.dll
 -r=/Users/brendannyambati/.nuget/packages/xamarin.essentials/1.0.1/lib/xamarinios10/Xamarin.Essentials.dll
@@ -211,7 +211,7 @@
 -r=/Users/brendannyambati/.nuget/packages/xamarin.forms/3.6.0.264807/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/brendannyambati/.nuget/packages/xamarin.forms/3.6.0.264807/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/brendannyambati/.nuget/packages/xamarin.forms/3.6.0.264807/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
--r=/Users/brendannyambati/Desktop/capstone/glr/glr/bin/Debug/netstandard2.0/glr.dll
+-r=/Users/brendannyambati/Desktop/cap/glr-transport-app/glr/bin/Debug/netstandard2.0/glr.dll
 --target-framework=Xamarin.iOS,v1.0
---root-assembly=/Users/brendannyambati/Desktop/capstone/glr/glr.iOS/bin/iPhoneSimulator/Debug/glr.iOS.exe
+--root-assembly=/Users/brendannyambati/Desktop/cap/glr-transport-app/glr.iOS/bin/iPhoneSimulator/Debug/glr.iOS.exe
 

@@ -21,11 +21,17 @@ namespace glr.Views
 
         async void OnEmployeeIconClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ViewEmployeeInfoPage {
-                BindingContext = new User()
-            });
+            var employee = (User)BindingContext;
+            await Navigation.PushAsync(new ViewEmployeeInfoPage(employee));
+            //    await Navigation.PushAsync(new ViewEmployeeInfoPage {
+            //        BindingContext = new User()
+            //    });
+            //}
         }
-
+        //await Navigation.PushAsync(new NoteEntryPage
+            //{
+            //    BindingContext = new Note()
+            //});
     }
 }
 

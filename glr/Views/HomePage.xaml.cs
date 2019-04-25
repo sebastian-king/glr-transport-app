@@ -67,21 +67,15 @@ namespace glr.Views
             });
         }
 
-    //    await Navigation.PushModalAsync(
-    //                new NavigationPage(new HomePage())
-    //                {
-    //                    BarBackgroundColor = Color.FromHex("#1E1E24"),
-    //                    BarTextColor = Color.White
-    //});
 
         async void OnEmployeeListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
 
             if(e.SelectedItem != null)
             {
                 await Navigation.PushAsync(new ViewEmployeeWsPage {
                     BindingContext = e.SelectedItem as User
+                    
                 });
             }
         }

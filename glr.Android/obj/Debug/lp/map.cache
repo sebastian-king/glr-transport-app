@@ -1,15 +1,15 @@
 FormsViewGroup
 glr
+Newtonsoft.Json
 Plugin.Messaging.Abstractions
 Plugin.Messaging
 SQLite-net
+SQLiteNetExtensions
 SQLitePCLRaw.batteries_green
 SQLitePCLRaw.batteries_v2
 SQLitePCLRaw.core
 SQLitePCLRaw.lib.e_sqlite3
 SQLitePCLRaw.provider.e_sqlite3
-SuaveControls.FloatingActionButton
-SuaveControls.FloatingActionButton.Droid
 System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
@@ -39,4 +39,3 @@ Xamarin.Forms.Xaml
 netstandard
 System.Reflection.Extensions
 System.Resources.ResourceManager
-System.Diagnostics.Tools

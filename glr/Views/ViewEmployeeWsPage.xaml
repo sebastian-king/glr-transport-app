@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="glr.Views.ViewEmployeeWsPage"
-             x:Name="EmployeesWs"
-             Title="Info">
+             x:Name="EmployeesWs">
     
     <ContentPage.ToolbarItems>
             <ToolbarItem Icon="smalluser.png"

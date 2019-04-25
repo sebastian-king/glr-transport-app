@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using glr.Models;
-using glr.Views;
 using Xamarin.Forms;
-using SQLite;
 
 namespace glr.Views
 {
@@ -17,9 +14,16 @@ namespace glr.Views
         async void OnSaveEmployeeButtonClicked(object sender, EventArgs e)
         {
             var user = (User)BindingContext;
-            await App.Database.SaveUserAsync(user);
-            await Navigation.PopAsync();
 
+            if (!user.IsaFieldEmpty())
+            {
+                await App.Database.SaveUserAsync(user);
+                await Navigation.PopAsync();
+            }
+            else
+            {
+                await DisplayAlert("Empty fields", "All fields must be filled out", "OK");
+            }
         }
     }
 }

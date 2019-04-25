@@ -1,4 +1,4 @@
-/Users/brendannyambati/Desktop/capstone/glr/glr.iOS/bin/iPhoneSimulator/Debug/glr.iOS.exe
+/Users/brendannyambati/Desktop/cap/glr-transport-app/glr.iOS/bin/iPhoneSimulator/Debug/glr.iOS.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/mscorlib.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/System.dll
@@ -21,7 +21,7 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/System.Web.Services.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/System.Xml.Linq.dll
 /Users/brendannyambati/.nuget/packages/xamarin.forms/3.6.0.264807/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll
-/Users/brendannyambati/Desktop/capstone/glr/glr/bin/Debug/netstandard2.0/glr.dll
+/Users/brendannyambati/Desktop/cap/glr-transport-app/glr/bin/Debug/netstandard2.0/glr.dll
 /Users/brendannyambati/.nuget/packages/xamarin.forms/3.6.0.264807/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
 /Users/brendannyambati/.nuget/packages/xam.plugins.messaging/5.2.0/lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Runtime.dll
@@ -41,7 +41,3 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Reflection.Extensions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Globalization.dll
 /Users/brendannyambati/.nuget/packages/xam.plugins.messaging/5.2.0/lib/Xamarin.iOS10/Plugin.Messaging.dll
-/Users/brendannyambati/.nuget/packages/suavecontrols.floatingactionbutton/2018.1.5/lib/xamarinios10/SuaveControls.FloatingActionButton.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Resources.ResourceManager.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Diagnostics.Tools.dll
-/Users/brendannyambati/.nuget/packages/suavecontrols.floatingactionbutton/2018.1.5/lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll

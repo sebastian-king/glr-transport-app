@@ -27,7 +27,20 @@
         </Frame>   
         <Frame Margin="10">
             <StackLayout>
-                <Entry Placeholder="Driver"/>
+               <!-- <Entry Placeholder="Driver"
+                       Text="{Binding Driver}"/>
+                    
+                <ListView x:Name="DriversListView">
+                    <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Label Text="{Binding }"
+                                           TextColor="Black"
+                                           FontSize="40"/>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>        
+                </ListView>-->
                 <Entry Placeholder="Customer"
                        Text="{Binding Customer}"/>
                 <Entry Placeholder="Freight Bill #"
@@ -51,6 +64,7 @@
                         CornerRadius="20"
                         Clicked="OnSaveButtonClicked"/>
                 </StackLayout>
+                    
             </StackLayout>
         </Frame>
 

@@ -15,6 +15,7 @@ namespace glr.Models
         public int ID { get; set; }
         public string FreightBillNumber { get; set; }
         public string Customer { get; set; }
+        //public User Driver { get; set; }
         //public string FromLocation { get; set; }
         public string PoNumber { get; set; }
         public string TruckNumber { get; set; }

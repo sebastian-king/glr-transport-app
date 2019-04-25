@@ -8,25 +8,30 @@
             <Frame Margin="20, 100, 20, 0">
                 <StackLayout>
                     <Entry Placeholder="First Name"
+                           x:Name="FirstNameLabel"
                            Text="{Binding FirstName}"/>
                     <Entry Placeholder="Last Name"
+                           x:Name="LastNameLabel"
                            Text="{Binding LastName}"/>
-                    <Entry Placeholder="Username"
-                           Text="{Binding Username}"/>
                     <Entry Placeholder="Password"
+                           x:Name="passwordLabel"
                            Text="{Binding Password}"/>
-                    <Entry Placeholder="Email"/>
+                    <Entry Placeholder="Email"
+                           x:Name="EmailLabel"
+                           Text="{Binding EmailAddress}"/>
+                    <StackLayout>
+                        <Button Margin="50" 
+                                BorderWidth="1"
+                                BorderRadius="20" 
+                                BackgroundColor="White"
+                                Text="Save"
+                                TextColor="Black"
+                                Clicked="OnSaveEmployeeButtonClicked"/>
+                    </StackLayout>
                     
                 </StackLayout>
             </Frame>
             
-            <Button Margin="50" 
-                    BorderWidth="1"
-                    BorderRadius="20" 
-                    BackgroundColor="White"
-                    Text="Save"
-                    TextColor="Black"
-                    Clicked="OnSaveEmployeeButtonClicked"/>
         </StackLayout>
         
     </ScrollView>   

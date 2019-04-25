@@ -17,7 +17,6 @@ namespace glr.Views
         {
             var user = new User
             {
-                Username = usernameEntry.Text,
                 Password = passwordEntry.Text
             };
 

@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.IO;
 using glr.Models;
-
+using SQLite;
 using Xamarin.Forms;
+using System.Data;
 
 namespace glr.Views
 {
     public partial class AddFreightBillPage : ContentPage
     {
+
         public AddFreightBillPage()
         {
             InitializeComponent();
