@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -12,6 +21,19 @@
         },
         "runtime": {
           "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -50,24 +72,76 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "SuaveControls.FloatingActionButton/2018.1.5": {
+      "Syncfusion.Licensing/17.1.0.43": {
         "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.3.4.231"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "System.Xml",
-          "Xamarin.iOS"
-        ],
         "compile": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.1.0.43"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfAutoComplete/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.1.0.43",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.1.0.43",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfSchedule/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.1.0.43",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.iOS.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -79,11 +153,28 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xamarin.Essentials/1.0.1": {
+      "Xam.Plugins.Messaging/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Messaging.dll": {}
+        }
+      },
+      "Xamarin.Essentials/1.1.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
+        "frameworkAssemblies": [
+          "OpenTK-1.0"
+        ],
         "compile": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         },
@@ -91,7 +182,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.6.0.264807": {
+      "Xamarin.Forms/3.6.0.344457": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -218,9 +309,13 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "SuaveControls.FloatingActionButton": "2018.1.5",
-          "Xamarin.Essentials": "1.0.1",
-          "Xamarin.Forms": "3.6.0.264807",
+          "SQLiteNetExtensions": "2.1.0",
+          "Syncfusion.Xamarin.SfAutoComplete": "17.1.0.43",
+          "Syncfusion.Xamarin.SfCalendar": "17.1.0.43",
+          "Syncfusion.Xamarin.SfSchedule": "17.1.0.43",
+          "Xam.Plugins.Messaging": "5.2.0",
+          "Xamarin.Essentials": "1.1.0",
+          "Xamarin.Forms": "3.6.0.344457",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -232,6 +327,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -242,6 +346,19 @@
         },
         "runtime": {
           "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -280,24 +397,76 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "SuaveControls.FloatingActionButton/2018.1.5": {
+      "Syncfusion.Licensing/17.1.0.43": {
         "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.3.4.231"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "System.Xml",
-          "Xamarin.iOS"
-        ],
         "compile": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.1.0.43"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfAutoComplete/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.1.0.43",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.1.0.43",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfSchedule/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.1.0.43",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.iOS.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -309,11 +478,28 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xamarin.Essentials/1.0.1": {
+      "Xam.Plugins.Messaging/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Messaging.dll": {}
+        }
+      },
+      "Xamarin.Essentials/1.1.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
+        "frameworkAssemblies": [
+          "OpenTK-1.0"
+        ],
         "compile": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         },
@@ -321,7 +507,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.6.0.264807": {
+      "Xamarin.Forms/3.6.0.344457": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -448,9 +634,13 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "SuaveControls.FloatingActionButton": "2018.1.5",
-          "Xamarin.Essentials": "1.0.1",
-          "Xamarin.Forms": "3.6.0.264807",
+          "SQLiteNetExtensions": "2.1.0",
+          "Syncfusion.Xamarin.SfAutoComplete": "17.1.0.43",
+          "Syncfusion.Xamarin.SfCalendar": "17.1.0.43",
+          "Syncfusion.Xamarin.SfSchedule": "17.1.0.43",
+          "Xam.Plugins.Messaging": "5.2.0",
+          "Xamarin.Essentials": "1.1.0",
+          "Xamarin.Forms": "3.6.0.344457",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -462,6 +652,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -472,6 +671,19 @@
         },
         "runtime": {
           "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -510,24 +722,76 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "SuaveControls.FloatingActionButton/2018.1.5": {
+      "Syncfusion.Licensing/17.1.0.43": {
         "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.3.4.231"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "System.Xml",
-          "Xamarin.iOS"
-        ],
         "compile": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.1.0.43"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfAutoComplete/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.1.0.43",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.1.0.43",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfSchedule/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.1.0.43",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.iOS.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -539,11 +803,28 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xamarin.Essentials/1.0.1": {
+      "Xam.Plugins.Messaging/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Messaging.dll": {}
+        }
+      },
+      "Xamarin.Essentials/1.1.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
+        "frameworkAssemblies": [
+          "OpenTK-1.0"
+        ],
         "compile": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         },
@@ -551,7 +832,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.6.0.264807": {
+      "Xamarin.Forms/3.6.0.344457": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -678,9 +959,13 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "SuaveControls.FloatingActionButton": "2018.1.5",
-          "Xamarin.Essentials": "1.0.1",
-          "Xamarin.Forms": "3.6.0.264807",
+          "SQLiteNetExtensions": "2.1.0",
+          "Syncfusion.Xamarin.SfAutoComplete": "17.1.0.43",
+          "Syncfusion.Xamarin.SfCalendar": "17.1.0.43",
+          "Syncfusion.Xamarin.SfSchedule": "17.1.0.43",
+          "Xam.Plugins.Messaging": "5.2.0",
+          "Xamarin.Essentials": "1.1.0",
+          "Xamarin.Forms": "3.6.0.344457",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -692,6 +977,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -702,6 +996,19 @@
         },
         "runtime": {
           "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -740,24 +1047,76 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "SuaveControls.FloatingActionButton/2018.1.5": {
+      "Syncfusion.Licensing/17.1.0.43": {
         "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.3.4.231"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "System.Xml",
-          "Xamarin.iOS"
-        ],
         "compile": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.dll": {},
-          "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll": {}
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.1.0.43"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfAutoComplete/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.1.0.43",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.1.0.43",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfSchedule/17.1.0.43": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.1.0.43",
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfSchedule.iOS.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -769,11 +1128,28 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xamarin.Essentials/1.0.1": {
+      "Xam.Plugins.Messaging/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Messaging.dll": {}
+        }
+      },
+      "Xamarin.Essentials/1.1.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
+        "frameworkAssemblies": [
+          "OpenTK-1.0"
+        ],
         "compile": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         },
@@ -781,7 +1157,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.6.0.264807": {
+      "Xamarin.Forms/3.6.0.344457": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -908,9 +1284,13 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "SuaveControls.FloatingActionButton": "2018.1.5",
-          "Xamarin.Essentials": "1.0.1",
-          "Xamarin.Forms": "3.6.0.264807",
+          "SQLiteNetExtensions": "2.1.0",
+          "Syncfusion.Xamarin.SfAutoComplete": "17.1.0.43",
+          "Syncfusion.Xamarin.SfCalendar": "17.1.0.43",
+          "Syncfusion.Xamarin.SfSchedule": "17.1.0.43",
+          "Xam.Plugins.Messaging": "5.2.0",
+          "Xamarin.Essentials": "1.1.0",
+          "Xamarin.Forms": "3.6.0.344457",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -923,6 +1303,31 @@
     }
   },
   "libraries": {
+    "Newtonsoft.Json/9.0.1": {
+      "sha512": "2okXpTRwUcgQb06put5LwwCjtgoFo74zkPksjcvOpnIjx7TagGW5IoBCAA4luZx1+tfiIhoNqoiI7Y7zwWGyKA==",
+      "type": "package",
+      "path": "newtonsoft.json/9.0.1",
+      "files": [
+        ".signature.p7s",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.9.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
     "sqlite-net-pcl/1.5.231": {
       "sha512": "Sy+K+Wm2RZ+4b1uLHsaXvfR92Or71XxPXa2Id6msSOVkZKh+c+PUk/HQOAgxyhm3lhvysL0mK6Gd6mI69NJ9AA==",
       "type": "package",
@@ -936,6 +1341,34 @@
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.xml",
         "sqlite-net-pcl.1.5.231.nupkg.sha512",
         "sqlite-net-pcl.nuspec"
+      ]
+    },
+    "SQLiteNetExtensions/2.1.0": {
+      "sha512": "X1ufKPcyQM7ExzdmdunHHSv+R3Pi7xeT9OG1wrPo6K2IR2Ku+VuEClQ1YlbxwfaKM4+NR4Ut2g0gHbJ5dllleA==",
+      "type": "package",
+      "path": "sqlitenetextensions/2.1.0",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard1.1/SQLiteNetExtensions.dll",
+        "lib/netstandard1.1/SQLiteNetExtensions.pdb",
+        "sqlitenetextensions.2.1.0.nupkg.sha512",
+        "sqlitenetextensions.nuspec",
+        "src/SQLiteNetExtensions/Attributes/CascadeOperation.cs",
+        "src/SQLiteNetExtensions/Attributes/ForeignKeyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/ManyToManyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/ManyToOneAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/OneToManyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/OneToOneAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/RelationshipAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/TextBlobAttribute.cs",
+        "src/SQLiteNetExtensions/Exceptions/IncorrectRelationshipException.cs",
+        "src/SQLiteNetExtensions/Extensions/ReadOperations.cs",
+        "src/SQLiteNetExtensions/Extensions/ReflectionExtensions.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/ITextBlobSerializer.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/Serializers/JsonBlobSerializer.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/TextBlobOperations.cs",
+        "src/SQLiteNetExtensions/Extensions/WriteOperations.cs",
+        "src/SQLiteNetExtensions/Properties/AssemblyInfo.cs"
       ]
     },
     "SQLitePCLRaw.bundle_green/1.1.11": {
@@ -1022,19 +1455,183 @@
         "sqlitepclraw.provider.sqlite3.ios_unified.nuspec"
       ]
     },
-    "SuaveControls.FloatingActionButton/2018.1.5": {
-      "sha512": "OTad3J+U+ZMFM3lIWnkNhWB3SZgcV7wBEjHk2SBbmdyRJBNI1dEr3DACZIKBBJOlcUxRPUaficxMjVhSN827/g==",
+    "Syncfusion.Licensing/17.1.0.43": {
+      "sha512": "n9Y1l2Cc+1cPOXulqm9B27m7Zs4BegEZcPPNi/KLTIEHpXj9endwQrXlji7MydCrlxzBxvXWQTRS9utb/IRJvw==",
       "type": "package",
-      "path": "suavecontrols.floatingactionbutton/2018.1.5",
+      "path": "syncfusion.licensing/17.1.0.43",
       "files": [
         ".signature.p7s",
-        "lib/monoandroid80/SuaveControls.FloatingActionButton.Droid.dll",
-        "lib/monoandroid80/SuaveControls.FloatingActionButton.dll",
-        "lib/portable45-net45+win8+wpa81/SuaveControls.FloatingActionButton.dll",
-        "lib/xamarinios10/SuaveControls.FloatingActionButton.dll",
-        "lib/xamarinios10/SuaveControls.FloatingActionButton.iOS.dll",
-        "suavecontrols.floatingactionbutton.2018.1.5.nupkg.sha512",
-        "suavecontrols.floatingactionbutton.nuspec"
+        "lib/MonoAndroid10/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net20/Syncfusion.Licensing.dll",
+        "lib/net35/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/netcoreapp3.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.2/Syncfusion.Licensing.dll",
+        "lib/netstandard1.4/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.17.1.0.43.nupkg.sha512",
+        "syncfusion.licensing.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.Core/17.1.0.43": {
+      "sha512": "9UjOj+2aG5qAWrfqP21ICTObjIhxS0C0F1PhCS/NK/koOgfupB6eIgUAthCqASek5hLKIX7IwdMm0qTnO7/Mlw==",
+      "type": "package",
+      "path": "syncfusion.xamarin.core/17.1.0.43",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.xml",
+        "lib/netstandard1.0/Syncfusion.Core.XForms.dll",
+        "lib/netstandard1.0/Syncfusion.Core.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/Syncfusion.Core.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/ToggleIcons/ToggleCollapsedIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/ToggleIcons/ToggleVisibleIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.xml",
+        "syncfusion.xamarin.core.17.1.0.43.nupkg.sha512",
+        "syncfusion.xamarin.core.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfAutoComplete/17.1.0.43": {
+      "sha512": "UpUJDC4kZ/iE9iRIeP1lnqFTZvNw2GY1QqRHE2hWTn6PacnnnHsZ+thrKAd8iSgtTePzK6GJsKUL5hTVCCTyGQ==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfautocomplete/17.1.0.43",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfAutoComplete.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfAutoComplete.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfAutoComplete.XForms.XML",
+        "lib/MonoAndroid10/Syncfusion.SfAutoComplete.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.XML",
+        "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.iOS.xml",
+        "lib/netstandard1.0/Syncfusion.SfAutoComplete.XForms.XML",
+        "lib/netstandard1.0/Syncfusion.SfAutoComplete.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfAutoComplete.XForms.XML",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfAutoComplete.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.XML",
+        "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/DeviceFamily-Mobile/Themes/InputStyles.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/DeviceFamily-Mobile/Themes/InputStyles.xbf",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Properties/Syncfusion.SfInput.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfInput.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfInput.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfShared.UWP.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/InputStyles.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/InputStyles.xbf",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/generic.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/generic.xbf",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Properties/Syncfusion.SfShared.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Syncfusion.SfShared.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Syncfusion.SfShared.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xaml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xbf",
+        "syncfusion.xamarin.sfautocomplete.17.1.0.43.nupkg.sha512",
+        "syncfusion.xamarin.sfautocomplete.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfCalendar/17.1.0.43": {
+      "sha512": "Qa5IYTj+snm5WqWoTd71SW+a/4Ssyybab/ZB394GwT+TXGvsyX0DsJz+OVYXkxQyTJoNRR0jHoQ3c9etHHW0PQ==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfcalendar/17.1.0.43",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfCalendar.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfCalendar.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfCalendar.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.xml",
+        "lib/netstandard1.0/Syncfusion.SfCalendar.XForms.dll",
+        "lib/netstandard1.0/Syncfusion.SfCalendar.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfCalendar.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfCalendar.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfCalendar.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/DeviceFamily-Mobile/Themes/InputStyles.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/DeviceFamily-Mobile/Themes/InputStyles.xbf",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Properties/Syncfusion.SfInput.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfInput.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfInput.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfShared.UWP.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/InputStyles.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/InputStyles.xbf",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/generic.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/generic.xbf",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Properties/Syncfusion.SfShared.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Syncfusion.SfShared.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Syncfusion.SfShared.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xaml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xbf",
+        "syncfusion.xamarin.sfcalendar.17.1.0.43.nupkg.sha512",
+        "syncfusion.xamarin.sfcalendar.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfSchedule/17.1.0.43": {
+      "sha512": "Kkulnq6Gm7mL2TrHRdSMw8fyM0L4phSYEHzVwIFomVcYCKxfB89rSRCXEJi3aCLdcYqscykPl2NWFUf/fj59MA==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfschedule/17.1.0.43",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfSchedule.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfSchedule.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfSchedule.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfSchedule.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfSchedule.iOS.dll",
+        "lib/netstandard1.0/Syncfusion.SfSchedule.XForms.dll",
+        "lib/netstandard1.0/Syncfusion.SfSchedule.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfSchedule.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfSchedule.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfSchedule.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfSchedule.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfSchedule.XForms.UWP/Properties/Syncfusion.SfSchedule.XForms.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfSchedule.XForms.UWP/Syncfusion.SfSchedule.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfSchedule.XForms.UWP/Syncfusion.SfSchedule.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfSchedule.XForms.UWP/Syncfusion.SfSchedule.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfSchedule.XForms.UWP/Syncfusion.SfSchedule.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfSchedule.XForms.UWP/Syncfusion.SfSchedule.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfSchedule.XForms.UWP/Themes/Generic.xbf",
+        "lib/uap10.0/Syncfusion.SfSchedule.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfSchedule.XForms.xml",
+        "syncfusion.xamarin.sfschedule.17.1.0.43.nupkg.sha512",
+        "syncfusion.xamarin.sfschedule.nuspec"
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
@@ -1083,12 +1680,59 @@
         "version.txt"
       ]
     },
-    "Xamarin.Essentials/1.0.1": {
-      "sha512": "TUsMSXqdLEZlx0O3EcWMwOF5e8X3Gh0GX28FlH3q8iyKAQBYd8tV+Ja7tHMplf7D8V4NVCG9ELqx2nk/jPWPew==",
+    "Xam.Plugins.Messaging/5.2.0": {
+      "sha512": "usjiQldDRyK28EVW7DJ8gfzuRBFgIJZbWvQMn6H1oGsBU28Et7WirLQLGt4U7H6DyXSCyfLIqZgRlgXbhp5fLg==",
       "type": "package",
-      "path": "xamarin.essentials/1.0.1",
+      "path": "xam.plugins.messaging/5.2.0",
       "files": [
         ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Messaging.dll",
+        "lib/MonoAndroid10/Plugin.Messaging.pdb",
+        "lib/MonoAndroid10/Plugin.Messaging.xml",
+        "lib/UAP10/Plugin.Messaging.Abstractions.dll",
+        "lib/UAP10/Plugin.Messaging.Abstractions.pdb",
+        "lib/UAP10/Plugin.Messaging.Abstractions.xml",
+        "lib/UAP10/Plugin.Messaging.dll",
+        "lib/UAP10/Plugin.Messaging.pdb",
+        "lib/UAP10/Plugin.Messaging.pri",
+        "lib/UAP10/Plugin.Messaging.xml",
+        "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Messaging.dll",
+        "lib/Xamarin.iOS10/Plugin.Messaging.xml",
+        "lib/netstandard1.0/Plugin.Messaging.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Messaging.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Messaging.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Messaging.deps.json",
+        "lib/netstandard1.0/Plugin.Messaging.dll",
+        "lib/netstandard1.0/Plugin.Messaging.pdb",
+        "lib/netstandard1.0/Plugin.Messaging.xml",
+        "lib/tizen40/Plugin.Messaging.Abstractions.dll",
+        "lib/tizen40/Plugin.Messaging.Abstractions.pdb",
+        "lib/tizen40/Plugin.Messaging.Abstractions.xml",
+        "lib/tizen40/Plugin.Messaging.deps.json",
+        "lib/tizen40/Plugin.Messaging.dll",
+        "xam.plugins.messaging.5.2.0.nupkg.sha512",
+        "xam.plugins.messaging.nuspec"
+      ]
+    },
+    "Xamarin.Essentials/1.1.0": {
+      "sha512": "AGismQb55pszEQ/ZIv9O1U2YyaF2gHdBdAUO79+biHf1s7AL2R++DIvmf7Z+wtfhZrB9wxhXAkOUuYHgpY6oTw==",
+      "type": "package",
+      "path": "xamarin.essentials/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid60/Xamarin.Essentials.dll",
+        "lib/monoandroid60/Xamarin.Essentials.pdb",
+        "lib/monoandroid60/Xamarin.Essentials.xml",
+        "lib/monoandroid70/Xamarin.Essentials.dll",
+        "lib/monoandroid70/Xamarin.Essentials.pdb",
+        "lib/monoandroid70/Xamarin.Essentials.xml",
         "lib/monoandroid71/Xamarin.Essentials.dll",
         "lib/monoandroid71/Xamarin.Essentials.pdb",
         "lib/monoandroid71/Xamarin.Essentials.xml",
@@ -1096,9 +1740,12 @@
         "lib/monoandroid80/Xamarin.Essentials.pdb",
         "lib/monoandroid80/Xamarin.Essentials.xml",
         "lib/monoandroid81/Xamarin.Essentials.dll",
-        "lib/monoandroid81/Xamarin.Essentials.dll.mdb",
         "lib/monoandroid81/Xamarin.Essentials.pdb",
         "lib/monoandroid81/Xamarin.Essentials.xml",
+        "lib/monoandroid90/Xamarin.Essentials.dll",
+        "lib/monoandroid90/Xamarin.Essentials.dll.mdb",
+        "lib/monoandroid90/Xamarin.Essentials.pdb",
+        "lib/monoandroid90/Xamarin.Essentials.xml",
         "lib/netstandard1.0/Xamarin.Essentials.dll",
         "lib/netstandard1.0/Xamarin.Essentials.pdb",
         "lib/netstandard1.0/Xamarin.Essentials.xml",
@@ -1113,14 +1760,14 @@
         "lib/xamarinios10/Xamarin.Essentials.pdb",
         "lib/xamarinios10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.0.1.nupkg.sha512",
+        "xamarin.essentials.1.1.0.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/3.6.0.264807": {
-      "sha512": "T7gYS3PoGNtp6D7GAX7fF4QzR7NC36NNQSiuEb5TXO8rEqkZGwpC4u/6S62rH0wL3dabWNVpJPPnL5jZvWeoVg==",
+    "Xamarin.Forms/3.6.0.344457": {
+      "sha512": "YTPYiRg5q8Q1AgkjX9mx2/0wfCNyoSfztvvWw9HY4qM1lmOgkAxAbbtY8zi3fCPUXhfZrCAgRvJYNS8VM519kQ==",
       "type": "package",
-      "path": "xamarin.forms/3.6.0.264807",
+      "path": "xamarin.forms/3.6.0.344457",
       "files": [
         ".signature.p7s",
         "build/MonoAndroid10/proguard.cfg",
@@ -1277,7 +1924,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.6.0.264807.nupkg.sha512",
+        "xamarin.forms.3.6.0.344457.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1289,9 +1936,8 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
-      "SuaveControls.FloatingActionButton >= 2018.1.5",
-      "Xamarin.Essentials >= 1.0.1",
-      "Xamarin.Forms >= 3.6.0.264807",
+      "Xamarin.Essentials >= 1.1.0",
+      "Xamarin.Forms >= 3.6.0.344457",
       "glr >= 1.0.0"
     ]
   },
@@ -1301,11 +1947,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/brendannyambati/Desktop/capstone/glr/glr.iOS/glr.iOS.csproj",
+      "projectUniqueName": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr.iOS/glr.iOS.csproj",
       "projectName": "glr.iOS",
-      "projectPath": "/Users/brendannyambati/Desktop/capstone/glr/glr.iOS/glr.iOS.csproj",
+      "projectPath": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr.iOS/glr.iOS.csproj",
       "packagesPath": "/Users/brendannyambati/.nuget/packages/",
-      "outputPath": "/Users/brendannyambati/Desktop/capstone/glr/glr.iOS/obj/",
+      "outputPath": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1320,8 +1966,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/brendannyambati/Desktop/capstone/glr/glr/glr.csproj": {
-              "projectPath": "/Users/brendannyambati/Desktop/capstone/glr/glr/glr.csproj"
+            "/Users/brendannyambati/Desktop/capstone/glr-transport/glr/glr.csproj": {
+              "projectPath": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr/glr.csproj"
             }
           }
         }
@@ -1330,17 +1976,13 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
-          "SuaveControls.FloatingActionButton": {
-            "target": "Package",
-            "version": "[2018.1.5, )"
-          },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.0.1, )"
+            "version": "[1.1.0, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[3.6.0.264807, )"
+            "version": "[3.6.0.344457, )"
           }
         }
       }

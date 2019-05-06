@@ -20,7 +20,10 @@ namespace glr.Views
         protected override async void OnAppearing()
         {
             base.OnAppearing();
+
             listView.ItemsSource = await App.Database.GetFreightBillsAsync();
+            EmployeesListView.ItemsSource = await App.Database.GetUsersAsync();
+
         }
 
         private void OnCurrentPageChanged(object sender, EventArgs e)
@@ -54,14 +57,39 @@ namespace glr.Views
                     BindingContext = e.SelectedItem as FreightBill
                 });
             }
-
         }
+
+        /*====================EMPLOYEES==============================*/
+
+        async void EmployeePageAddButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AddEmployeePage
+            {
+                BindingContext = new User()
+            });
+        }
+
+
+        async void OnEmployeeListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
+            if(e.SelectedItem != null)
+            {
+                await Navigation.PushAsync(new ViewEmployeeWsPage {
+                    BindingContext = e.SelectedItem as User
+                    
+                });
+            }
+        }
+
+
+
 
         //private void PermitButtonClicked(object sender, EventArgs e)
         //{
         //    Map.OpenAsync(11.26, 75.78, new MapLaunchOptions
         //    {
-        //        NavigationMode = NavigationMode.Dri
+        //        NavigationMode = NavigationMode.Driving
         //    });
         //}
 

@@ -11,7 +11,19 @@ void xamarin_register_assemblies_impl ()
 	guint32 exception_gchandle = 0;
 	xamarin_open_and_register ("Xamarin.Forms.Platform.iOS.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
-	xamarin_open_and_register ("SuaveControls.FloatingActionButton.iOS.dll", &exception_gchandle);
+	xamarin_open_and_register ("Syncfusion.SfAutoComplete.XForms.iOS.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("Syncfusion.SfAutoComplete.iOS.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("Syncfusion.Core.XForms.iOS.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("Syncfusion.SfCalendar.XForms.iOS.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("Syncfusion.SfSchedule.XForms.iOS.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("Syncfusion.SfSchedule.iOS.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("Xamarin.Essentials.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 
 }

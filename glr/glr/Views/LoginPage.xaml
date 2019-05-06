@@ -11,14 +11,14 @@
                HorizontalTextAlignment="center"
                Margin="0, 220, 0, 0"/>
         
-        <Entry x:Name="usernameEntry"
-               Placeholder="username"
+        <Entry x:Name="emailEntry"
+               Placeholder="Email"
                Margin="80, 50, 80, 0"
                BackgroundColor="White"/>
         
         
         <Entry x:Name="passwordEntry" 
-               Placeholder="password"
+               Placeholder="Password"
                Margin="80, 0, 80, 0"
                BackgroundColor="white"
                IsPassword="true"/>

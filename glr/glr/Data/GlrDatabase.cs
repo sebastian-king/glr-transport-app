@@ -14,6 +14,7 @@ namespace glr.Data
         {
             _database = new SQLiteAsyncConnection(dbPath);
             _database.CreateTableAsync<FreightBill>().Wait();
+            _database.CreateTableAsync<User>().Wait();
         }
 
         public Task<List<FreightBill>> GetFreightBillsAsync()
@@ -21,9 +22,21 @@ namespace glr.Data
             return _database.Table<FreightBill>().ToListAsync();
         }
 
+        public Task<List<User>> GetUsersAsync()
+        {
+            return _database.Table<User>().ToListAsync();
+        }
+
         public Task<FreightBill> GetFreightBillAsync(int id)
         {
             return _database.Table<FreightBill>()
+                .Where(i => i.ID == id)
+                .FirstOrDefaultAsync();
+        }
+
+        public Task<User> GetUserAsync(int id)
+        {
+            return _database.Table<User>()
                 .Where(i => i.ID == id)
                 .FirstOrDefaultAsync();
         }
@@ -40,10 +53,26 @@ namespace glr.Data
             }
         }
 
+        public Task<int> SaveUserAsync(User user)
+        {
+            if(user.ID != 0)
+            {
+                return _database.UpdateAsync(user);
+            }
+            else
+            {
+                return _database.InsertAsync(user);
+            }
+        }
+
         public Task<int> DeleteFreightBillAsync(FreightBill freightBill)
         {
             return _database.DeleteAsync(freightBill);
         }
 
+        public Task<int> DeleteUserAsync(User user)
+        {
+            return _database.DeleteAsync(user);
+        }
     }
 }

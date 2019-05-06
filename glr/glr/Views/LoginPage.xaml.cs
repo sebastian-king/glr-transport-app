@@ -17,13 +17,22 @@ namespace glr.Views
         {
             var user = new User
             {
-                Username = usernameEntry.Text,
+                EmailAddress = emailEntry.Text,
                 Password = passwordEntry.Text
             };
 
             var isValid = CorrectCredentials(user);
 
             if (isValid)
+            {
+                await Navigation.PushModalAsync(
+                    new NavigationPage(new RegularEmployeeHomePage())
+                    {
+                        BarBackgroundColor = Color.FromHex("#1E1E24"),
+                        BarTextColor = Color.White
+                    });
+            }
+            else
             {
                 await Navigation.PushModalAsync(
                     new NavigationPage(new HomePage())
@@ -37,10 +46,10 @@ namespace glr.Views
 
         bool CorrectCredentials(User user)
         {
-            Console.WriteLine(user.Username);
+            Console.WriteLine(user.EmailAddress);
             Console.WriteLine(user.Password);
 
-            if(user.Username.ToLower().Equals("jimmy") &&
+            if(user.EmailAddress.ToLower().Equals("jimmy") &&
                 (user.Password.ToLower().Equals("pass")))
             {
                 return true;
