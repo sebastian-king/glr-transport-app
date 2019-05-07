@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using glr.Models;
-
+using Syncfusion.SfSchedule.XForms;
 using Xamarin.Forms;
 using Xamarin.Essentials;
 
@@ -24,6 +24,37 @@ namespace glr.Views
             listView.ItemsSource = await App.Database.GetFreightBillsAsync();
             EmployeesListView.ItemsSource = await App.Database.GetUsersAsync();
 
+            var freightBills = await App.Database.GetFreightBillsAsync();
+
+            var freightBillAppointments = App.FreightsInCalendarCollection;
+
+            foreach (var freight in freightBills)
+            {
+                foreach (var freightAppointment in freightBillAppointments)
+                {
+                    if (freightAppointment.Subject.Contains(freight.FreightBillNumber))
+                    {
+                        switch (freight.status)
+                        {
+                            case fbStatus.freightPending:
+                                freightAppointment.Color = Color.FromHex("#ffe64a");
+                                break;
+                            case fbStatus.freightCanceled:
+                                freightAppointment.Color = Color.Red;
+                                break;
+                            case fbStatus.freightCompleted:
+                                freightAppointment.Color = Color.Green;
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+
+
+            }
+
+            schedule.DataSource = freightBillAppointments;
         }
 
         private void OnCurrentPageChanged(object sender, EventArgs e)
@@ -82,16 +113,44 @@ namespace glr.Views
             }
         }
 
+        /*================ CALENDAR ==================================*/
 
+        void Handle_OnMonthInlineAppointmentLoadedEvent(object sender, Syncfusion.SfSchedule.XForms.MonthInlineAppointmentLoadedEventArgs e)
+        {
+            var freightAppointment = (e.appointment as ScheduleAppointment);
+            Label freightLabel = new Label();
+            freightLabel.BackgroundColor = freightAppointment.Color;
+            freightLabel.HorizontalTextAlignment = TextAlignment.Center;
+            freightLabel.VerticalTextAlignment = TextAlignment.Center;
+            freightLabel.Text = freightAppointment.Subject;
 
+            if (freightLabel.BackgroundColor == Color.FromHex("#ffe64a"))
+            {
+                freightLabel.TextColor = Color.Black;
+            }
+            else freightLabel.TextColor = Color.White;
 
-        //private void PermitButtonClicked(object sender, EventArgs e)
-        //{
-        //    Map.OpenAsync(11.26, 75.78, new MapLaunchOptions
-        //    {
-        //        NavigationMode = NavigationMode.Driving
-        //    });
-        //}
+            e.view = freightLabel;
+        }
+
+        private async void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineAppointmentTappedEventArgs e)
+        {
+            var appointment = (e.Appointment as ScheduleAppointment);
+            var freightBills = await App.Database.GetFreightBillsAsync();
+
+            foreach (var freightBill in freightBills)
+            {
+                if (appointment.Subject.Contains(freightBill.FreightBillNumber))
+                {
+                    await Navigation.PushAsync(new ViewFreightBillsPage
+                    {
+                        BindingContext = freightBill as FreightBill
+                    });
+                    break;
+                }
+            }
+        }
+
 
     }
 }

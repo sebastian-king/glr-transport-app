@@ -1,4 +1,4 @@
-/Users/brendannyambati/Desktop/capstone/glr-transport/glr.iOS/bin/iPhone/Debug/glr.iOS.exe
+/Users/brendannyambati/Desktop/capstone/mobile/glr.iOS/bin/iPhone/Debug/glr.iOS.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/mscorlib.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/System.dll
@@ -50,7 +50,7 @@
 /Users/brendannyambati/.nuget/packages/syncfusion.xamarin.sfschedule/17.1.0.43/lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.iOS.dll
 /Users/brendannyambati/.nuget/packages/syncfusion.xamarin.sfschedule/17.1.0.43/lib/Xamarin.iOS10/Syncfusion.SfSchedule.XForms.dll
 /Users/brendannyambati/.nuget/packages/syncfusion.xamarin.sfschedule/17.1.0.43/lib/Xamarin.iOS10/Syncfusion.SfSchedule.iOS.dll
-/Users/brendannyambati/Desktop/capstone/glr-transport/glr/bin/Debug/netstandard2.0/glr.dll
+/Users/brendannyambati/Desktop/capstone/mobile/glr/bin/Debug/netstandard2.0/glr.dll
 /Users/brendannyambati/.nuget/packages/xam.plugins.messaging/5.2.0/lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll
 /Users/brendannyambati/.nuget/packages/xamarin.essentials/1.1.0/lib/xamarinios10/Xamarin.Essentials.dll
 /Users/brendannyambati/.nuget/packages/sqlite-net-pcl/1.5.231/lib/netstandard1.1/SQLite-net.dll

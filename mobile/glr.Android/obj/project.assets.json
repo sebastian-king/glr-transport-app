@@ -2437,11 +2437,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr.Android/glr.Android.csproj",
+      "projectUniqueName": "/Users/brendannyambati/Desktop/capstone/mobile/glr.Android/glr.Android.csproj",
       "projectName": "glr.Android",
-      "projectPath": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr.Android/glr.Android.csproj",
+      "projectPath": "/Users/brendannyambati/Desktop/capstone/mobile/glr.Android/glr.Android.csproj",
       "packagesPath": "/Users/brendannyambati/.nuget/packages/",
-      "outputPath": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr.Android/obj/",
+      "outputPath": "/Users/brendannyambati/Desktop/capstone/mobile/glr.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -2456,8 +2456,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/brendannyambati/Desktop/capstone/glr-transport/glr/glr.csproj": {
-              "projectPath": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr/glr.csproj"
+            "/Users/brendannyambati/Desktop/capstone/mobile/glr/glr.csproj": {
+              "projectPath": "/Users/brendannyambati/Desktop/capstone/mobile/glr/glr.csproj"
             }
           }
         }

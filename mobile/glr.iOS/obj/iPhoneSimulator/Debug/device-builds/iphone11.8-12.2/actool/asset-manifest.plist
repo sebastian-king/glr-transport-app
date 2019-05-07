@@ -6,10 +6,10 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/brendannyambati/Desktop/capstone/glr-transport/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/bundle/AppIcon60x60@2x.png</string>
-			<string>/Users/brendannyambati/Desktop/capstone/glr-transport/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/bundle/AppIcon76x76@2x~ipad.png</string>
-			<string>/Users/brendannyambati/Desktop/capstone/glr-transport/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/bundle/Assets.car</string>
-			<string>/Users/brendannyambati/Desktop/capstone/glr-transport/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/partial-info.plist</string>
+			<string>/Users/brendannyambati/Desktop/capstone/mobile/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/bundle/AppIcon60x60@2x.png</string>
+			<string>/Users/brendannyambati/Desktop/capstone/mobile/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/bundle/AppIcon76x76@2x~ipad.png</string>
+			<string>/Users/brendannyambati/Desktop/capstone/mobile/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/bundle/Assets.car</string>
+			<string>/Users/brendannyambati/Desktop/capstone/mobile/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/partial-info.plist</string>
 		</array>
 	</dict>
 	<key>com.apple.actool.document.notices</key>
@@ -20,7 +20,7 @@
 				<string>./AppIcon.appiconset/[][ipad][76x76][][][1x][][]</string>
 			</array>
 			<key>catalog</key>
-			<string>/Users/brendannyambati/Desktop/capstone/glr-transport/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/cloned-assets/Assets.xcassets</string>
+			<string>/Users/brendannyambati/Desktop/capstone/mobile/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>76x76@1x app icons only apply to iPad apps targeting releases of iOS prior to 10.0.</string>
 			<key>type</key>
@@ -35,7 +35,7 @@
 				<string>./AppIcon.appiconset/[][ipad][40x40][][][2x][][]</string>
 			</array>
 			<key>catalog</key>
-			<string>/Users/brendannyambati/Desktop/capstone/glr-transport/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/cloned-assets/Assets.xcassets</string>
+			<string>/Users/brendannyambati/Desktop/capstone/mobile/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>The file "Icon80.png" for the image set "AppIcon" does not exist.</string>
 			<key>type</key>
@@ -47,7 +47,7 @@
 				<string>./AppIcon.appiconset/[][ipad][40x40][][][2x][][]</string>
 			</array>
 			<key>catalog</key>
-			<string>/Users/brendannyambati/Desktop/capstone/glr-transport/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/cloned-assets/Assets.xcassets</string>
+			<string>/Users/brendannyambati/Desktop/capstone/mobile/glr.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>The file "Icon80.png" for the image set "AppIcon" does not exist.</string>
 			<key>type</key>

@@ -18,8 +18,7 @@
                  BackgroundColor="#444140">
         
         <ContentPage.ToolbarItems>
-            <ToolbarItem Icon="permpdf.png"
-                         />
+            <ToolbarItem Icon="permpdf.png"/>
         </ContentPage.ToolbarItems>
 
             <syncfusion:SfSchedule x:Name="schedule"
@@ -59,7 +58,8 @@
             
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding FreightBillNumber}"
+                    <TextCell x:Name="lvTextCell" 
+                              Text="{Binding FreightBillNumber}"
                               Detail="{Binding status}"
                               DetailColor="Red"/>
                 </DataTemplate>

@@ -107,7 +107,6 @@ namespace glr.Views
         {
 
             var freightBill = (FreightBill)BindingContext;
-            //var anEvent = freightBill.CalendarEvent();
             var freightAppointment = freightBill.FreightInCalendar();
 
             foreach(var fbAppointment in App.FreightsInCalendarCollection)

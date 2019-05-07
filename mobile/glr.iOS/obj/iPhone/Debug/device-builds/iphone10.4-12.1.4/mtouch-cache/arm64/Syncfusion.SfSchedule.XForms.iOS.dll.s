@@ -108892,7 +108892,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 58,211,228,208,206,113,137,131,217,68,223,144,165,183,75,164
+	.byte 184,243,181,26,103,157,188,154,14,104,81,45,85,0,85,152
 	.globl _mono_aot_module_Syncfusion_SfSchedule_XForms_iOS_info
 	.align 3
 _mono_aot_module_Syncfusion_SfSchedule_XForms_iOS_info:

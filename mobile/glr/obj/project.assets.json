@@ -3552,11 +3552,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr/glr.csproj",
+      "projectUniqueName": "/Users/brendannyambati/Desktop/capstone/mobile/glr/glr.csproj",
       "projectName": "glr",
-      "projectPath": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr/glr.csproj",
+      "projectPath": "/Users/brendannyambati/Desktop/capstone/mobile/glr/glr.csproj",
       "packagesPath": "/Users/brendannyambati/.nuget/packages/",
-      "outputPath": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr/obj/",
+      "outputPath": "/Users/brendannyambati/Desktop/capstone/mobile/glr/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

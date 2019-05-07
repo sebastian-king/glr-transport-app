@@ -1947,11 +1947,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr.iOS/glr.iOS.csproj",
+      "projectUniqueName": "/Users/brendannyambati/Desktop/capstone/mobile/glr.iOS/glr.iOS.csproj",
       "projectName": "glr.iOS",
-      "projectPath": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr.iOS/glr.iOS.csproj",
+      "projectPath": "/Users/brendannyambati/Desktop/capstone/mobile/glr.iOS/glr.iOS.csproj",
       "packagesPath": "/Users/brendannyambati/.nuget/packages/",
-      "outputPath": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr.iOS/obj/",
+      "outputPath": "/Users/brendannyambati/Desktop/capstone/mobile/glr.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1966,8 +1966,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/brendannyambati/Desktop/capstone/glr-transport/glr/glr.csproj": {
-              "projectPath": "/Users/brendannyambati/Desktop/capstone/glr-transport/glr/glr.csproj"
+            "/Users/brendannyambati/Desktop/capstone/mobile/glr/glr.csproj": {
+              "projectPath": "/Users/brendannyambati/Desktop/capstone/mobile/glr/glr.csproj"
             }
           }
         }

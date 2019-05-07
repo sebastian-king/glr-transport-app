@@ -2,7 +2,7 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-            xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+            xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
             x:Class="glr.Views.HomePage"
             CurrentPageChanged="OnCurrentPageChanged"
             BarBackgroundColor="#1E1E24"
@@ -18,14 +18,15 @@
                  BackgroundColor="#444140">
         
         <ContentPage.ToolbarItems>
-            <ToolbarItem Icon="permpdf.png"
-                         />
+            <ToolbarItem Icon="permpdf.png"/>
         </ContentPage.ToolbarItems>
         
-        <syncfusion:SfCalendar x:Name="calendar" /> 
-        
-        
-        
+        <syncfusion:SfSchedule x:Name="schedule"
+                                   ScheduleView="MonthView"
+                                   ShowAppointmentsInline="true"
+                                   MonthInlineAppointmentTapped="Schedule_MonthInlineAppointmentTapped"
+                                   OnMonthInlineAppointmentLoadedEvent="Handle_OnMonthInlineAppointmentLoadedEvent">
+            </syncfusion:SfSchedule>
     </ContentPage>
     
     <ContentPage x:Name="worksheetPage"
@@ -43,7 +44,7 @@
     
     
     <ContentPage x:Name="freightBillPage"
-                 Title="Friehgts"
+                 Title="Freights"
                  Icon="viewfb.png">
         
         <ContentPage.ToolbarItems>

@@ -86172,7 +86172,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 254,7,41,245,169,57,145,96,173,81,30,126,147,156,184,119
+	.byte 167,78,44,230,228,177,130,230,193,105,204,251,33,49,122,127
 	.globl _mono_aot_module_Syncfusion_Core_XForms_info
 	.align 3
 _mono_aot_module_Syncfusion_Core_XForms_info:

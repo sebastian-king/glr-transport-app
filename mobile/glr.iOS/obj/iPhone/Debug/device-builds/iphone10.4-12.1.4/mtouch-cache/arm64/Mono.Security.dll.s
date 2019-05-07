@@ -49422,7 +49422,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 215,70,248,187,210,12,110,79,108,217,203,223,29,97,51,193
+	.byte 219,196,180,153,16,124,206,140,29,202,21,3,20,37,232,208
 	.globl _mono_aot_module_Mono_Security_info
 	.align 3
 _mono_aot_module_Mono_Security_info:

@@ -45152,7 +45152,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 233,19,4,106,102,250,152,122,3,210,74,10,154,38,63,110
+	.byte 113,78,107,162,129,92,45,245,72,217,200,170,144,101,29,8
 	.globl _mono_aot_module_Syncfusion_SfAutoComplete_XForms_iOS_info
 	.align 3
 _mono_aot_module_Syncfusion_SfAutoComplete_XForms_iOS_info:

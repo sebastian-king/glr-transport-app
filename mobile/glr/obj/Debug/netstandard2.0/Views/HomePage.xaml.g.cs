@@ -20,7 +20,7 @@ namespace glr.Views {
         private global::Xamarin.Forms.ContentPage homePage;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Syncfusion.SfCalendar.XForms.SfCalendar calendar;
+        private global::Syncfusion.SfSchedule.XForms.SfSchedule schedule;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.ContentPage worksheetPage;
@@ -44,7 +44,7 @@ namespace glr.Views {
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(HomePage));
             homePage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ContentPage>(this, "homePage");
-            calendar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.SfCalendar.XForms.SfCalendar>(this, "calendar");
+            schedule = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.SfSchedule.XForms.SfSchedule>(this, "schedule");
             worksheetPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ContentPage>(this, "worksheetPage");
             freightBillPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ContentPage>(this, "freightBillPage");
             listView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "listView");

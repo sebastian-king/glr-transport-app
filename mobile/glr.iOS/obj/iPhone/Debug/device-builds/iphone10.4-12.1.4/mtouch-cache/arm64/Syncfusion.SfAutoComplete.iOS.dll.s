@@ -138686,7 +138686,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 67,4,166,104,181,39,163,147,108,99,235,118,211,240,129,47
+	.byte 8,150,70,246,165,141,16,97,18,66,222,214,194,112,244,89
 	.globl _mono_aot_module_Syncfusion_SfAutoComplete_iOS_info
 	.align 3
 _mono_aot_module_Syncfusion_SfAutoComplete_iOS_info:
