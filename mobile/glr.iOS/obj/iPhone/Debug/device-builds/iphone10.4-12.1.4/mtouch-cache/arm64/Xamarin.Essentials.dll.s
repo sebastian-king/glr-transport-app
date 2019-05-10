@@ -22799,9 +22799,9 @@ ldr x16, [x16, #2160]
 .word 0xf940ea31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xd290c5e0
+.word 0xd290d2e0
 .word 0xf2a00020
-.word 0xd290c5e0
+.word 0xd290d2e0
 .word 0xf2a00020
 bl _p_173
 .word 0xaa0003e1
@@ -27492,9 +27492,9 @@ bl _p_309
 .word 0xf9428a31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xd290cb20
+.word 0xd290d820
 .word 0xf2a00020
-.word 0xd290cb20
+.word 0xd290d820
 .word 0xf2a00020
 bl _p_173
 bl _p_349
@@ -27675,9 +27675,9 @@ ldr x16, [x16, #2672]
 .word 0xf9408631
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xd28789c0
+.word 0xd2879840
 .word 0xf2a00020
-.word 0xd28789c0
+.word 0xd2879840
 .word 0xf2a00020
 bl _p_173
 .word 0xaa0003e1
@@ -27803,9 +27803,9 @@ bl _p_328
 .word 0xf9426231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xd290cb20
+.word 0xd290d820
 .word 0xf2a00020
-.word 0xd290cb20
+.word 0xd290d820
 .word 0xf2a00020
 bl _p_173
 bl _p_349
@@ -36595,7 +36595,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 189,137,65,93,19,222,150,3,37,157,89,112,253,192,100,134
+	.byte 169,223,187,71,27,234,74,195,79,98,124,247,184,1,190,10
 	.globl _mono_aot_module_Xamarin_Essentials_info
 	.align 3
 _mono_aot_module_Xamarin_Essentials_info:

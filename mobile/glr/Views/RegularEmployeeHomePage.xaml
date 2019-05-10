@@ -67,15 +67,44 @@
         </ListView>
     </ContentPage>
     
-    <ContentPage x:Name="settingsPage"
+    <ContentPage x:Name="employeeSettingsTab"
                  Title="Settings"
                  Icon="settings.png"
-                 BackgroundColor="#E2D4B7">
-        <StackLayout>
-            <Label Text="Employee"
-                   TextColor="white"
-                   HorizontalOptions="Center"
-                   Margin="0, 200, 0, 0"/>
+                 BackgroundColor="White">
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Text="Logout"
+                         Clicked="OnLogoutButtonClicked"/>
+        </ContentPage.ToolbarItems>
+        
+        <StackLayout Margin="30, 50">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="First Name: "/>
+                <Label x:Name="EmpFirstName"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Last Name: "/>
+                <Label x:Name="EmpLastName"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Email: "/>
+                <Label x:Name="EmpUserEmail"/>
+            </StackLayout>
+            
+            <StackLayout Margin="0, 30">
+                <StackLayout HorizontalOptions="FillAndExpand"
+                             VerticalOptions="FillAndExpand">
+                    <Button Text="Edit"
+                            HorizontalOptions="Start"
+                            Padding="50, 0"
+                            BorderWidth="1"
+                            TextColor="White"
+                            BackgroundColor="#1c191c"/>
+                </StackLayout>
+                
+            </StackLayout>
+            
         </StackLayout>
         
     </ContentPage>

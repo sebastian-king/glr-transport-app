@@ -49277,7 +49277,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Net_Http_HttpRes
 .word 0xd2800e02
 bl _p_347
 .word 0x14000009
-.word 0xd290c5e0
+.word 0xd290d2e0
 .word 0xf2a00020
 bl _p_27
 .word 0xaa0003e1
@@ -49540,7 +49540,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Net_Http_HttpRes
 .word 0xd2801502
 bl _p_347
 .word 0x14000009
-.word 0xd290c5e0
+.word 0xd290d2e0
 .word 0xf2a00020
 bl _p_27
 .word 0xaa0003e1
@@ -50018,7 +50018,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_Start_
 .word 0xf9401800
 .word 0xf9002ba0
 .word 0x14000009
-.word 0xd290c5e0
+.word 0xd290d2e0
 .word 0xf2a00020
 bl _p_27
 .word 0xaa0003e1
@@ -50094,7 +50094,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_System_Net_Http_Htt
 .word 0xf9401c00
 .word 0xf9002fa0
 .word 0x14000009
-.word 0xd290c5e0
+.word 0xd290d2e0
 .word 0xf2a00020
 bl _p_27
 .word 0xaa0003e1
@@ -50168,7 +50168,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_Start_
 .word 0xf9401800
 .word 0xf9002ba0
 .word 0x14000009
-.word 0xd290c5e0
+.word 0xd290d2e0
 .word 0xf2a00020
 bl _p_27
 .word 0xaa0003e1
@@ -53854,7 +53854,7 @@ bl _p_648
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 45 610 0
-.word 0xd290cb20
+.word 0xd290d820
 .word 0xf2a00020
 bl _p_27
 .word 0xaa0003e1
@@ -53989,7 +53989,7 @@ bl _p_665
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 45 649 0
-.word 0xd28789c0
+.word 0xd2879840
 .word 0xf2a00020
 bl _p_27
 .word 0xaa0003e1
@@ -53998,7 +53998,7 @@ bl _p_27
 bl _mono_create_corlib_exception_1
 bl _p_21
 .loc 45 675 0
-.word 0xd290cb20
+.word 0xd290d820
 .word 0xf2a00020
 bl _p_27
 .word 0xaa0003e1
@@ -64616,7 +64616,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 201,142,131,179,85,79,236,109,236,252,152,81,196,47,103,14
+	.byte 224,176,186,124,144,48,58,131,102,127,37,18,253,91,36,247
 	.globl _mono_aot_module_System_Net_Http_info
 	.align 3
 _mono_aot_module_System_Net_Http_info:

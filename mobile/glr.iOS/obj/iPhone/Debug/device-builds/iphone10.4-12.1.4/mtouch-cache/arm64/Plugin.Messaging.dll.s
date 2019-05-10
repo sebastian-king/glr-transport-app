@@ -12070,9 +12070,9 @@ ldr x16, [x16, #1936]
 .word 0xf9406e31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xd29f0560
+.word 0xd29f1260
 .word 0xf2a00020
-.word 0xd29f0560
+.word 0xd29f1260
 .word 0xf2a00020
 bl _p_102
 .word 0xaa0003e1
@@ -15765,9 +15765,9 @@ ldr x16, [x16, #2360]
 .word 0xf9407231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xd29f0560
+.word 0xd29f1260
 .word 0xf2a00020
-.word 0xd29f0560
+.word 0xd29f1260
 .word 0xf2a00020
 bl _p_102
 .word 0xaa0003e1
@@ -20712,7 +20712,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 71,191,182,113,235,2,229,14,47,64,134,36,7,109,136,181
+	.byte 49,24,159,171,195,187,148,102,227,135,159,112,191,52,95,209
 	.globl _mono_aot_module_Plugin_Messaging_info
 	.align 3
 _mono_aot_module_Plugin_Messaging_info:

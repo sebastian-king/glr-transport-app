@@ -63767,7 +63767,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 55,234,21,6,151,125,175,195,87,229,87,18,103,186,228,102
+	.byte 220,52,111,225,157,135,210,222,242,245,75,3,90,98,41,227
 	.globl _mono_aot_module_Syncfusion_SfCalendar_XForms_info
 	.align 3
 _mono_aot_module_Syncfusion_SfCalendar_XForms_info:

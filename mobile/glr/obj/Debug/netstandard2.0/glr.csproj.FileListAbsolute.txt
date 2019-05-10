@@ -72,3 +72,4 @@
 /Users/brendannyambati/Desktop/capstone/mobile/glr/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/brendannyambati/Desktop/capstone/mobile/glr/obj/Debug/netstandard2.0/glr.dll
 /Users/brendannyambati/Desktop/capstone/mobile/glr/obj/Debug/netstandard2.0/glr.pdb
+/Users/brendannyambati/Desktop/capstone/mobile/glr/obj/Debug/netstandard2.0/Views/EditEmployeePage.xaml.g.cs

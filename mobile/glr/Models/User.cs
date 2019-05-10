@@ -8,12 +8,13 @@ namespace glr.Models
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
+        public int TypeOfEmployee { get; set; }
         public string Password { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string EmailAddress { get; set; }
         public string FullName => $"{FirstName} {LastName}";
-
+        public bool loggedIn { get; set; }
         public bool IsaFieldEmpty()
         {
             if (this.FirstName == null 
@@ -23,6 +24,11 @@ namespace glr.Models
             {
                 return true;
             }return false;
+        }
+
+        public User()
+        {
+            this.TypeOfEmployee = -1;
         }
     }
 }

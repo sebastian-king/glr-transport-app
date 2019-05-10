@@ -7,6 +7,15 @@
         
         <Frame Margin="20">
             <StackLayout Spacing="20">
+                <Label x:Name="Position" 
+                       HorizontalOptions="Center"
+                       FontSize="Large"
+                       TextColor="Blue"
+                       FontAttributes="Bold"/>
+                
+                    <BoxView HeightRequest="1" 
+                             BackgroundColor="Black" 
+                             HorizontalOptions="FillAndExpand" />
                 
                 <StackLayout Orientation="Horizontal">
                     <Label Text="First Name: "

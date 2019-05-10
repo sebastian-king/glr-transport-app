@@ -9,7 +9,7 @@
                TextColor="white"
                FontSize="40"
                HorizontalTextAlignment="center"
-               Margin="0, 220, 0, 0"/>
+               Margin="0, 180, 0, 0"/>
         
         <Entry x:Name="emailEntry"
                Placeholder="Email"

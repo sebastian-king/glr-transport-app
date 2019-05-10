@@ -16,9 +16,12 @@ namespace glr.Views
     public partial class RegularEmployeeHomePage : TabbedPage
     {
 
-        public RegularEmployeeHomePage()
+        public RegularEmployeeHomePage(User user)
         {
             InitializeComponent();
+            EmpFirstName.Text = user.FullName;
+            EmpLastName.Text = user.LastName;
+            EmpUserEmail.Text = user.EmailAddress;
         }
 
         protected override async void OnAppearing()
@@ -52,8 +55,6 @@ namespace glr.Views
                         }
                     }
                 }
-
-
             }
 
             schedule.DataSource = freightBillAppointments;
@@ -65,6 +66,7 @@ namespace glr.Views
             if (CurrentPage == homePage) this.Title = "Home";
             else if (CurrentPage == worksheetPage) this.Title = "Worksheet";
             else if (CurrentPage == freightBillPage) this.Title = "Freight bills";
+            else if (CurrentPage == employeeSettingsTab) this.Title = "Settings";
         }
 
 
@@ -160,5 +162,20 @@ namespace glr.Views
             }
         }
 
+        /*================ WORKSHEET/TIMESHEET ==================================*/
+        async void OnLogoutButtonClicked(object sender, System.EventArgs e)
+        {
+            var id = (int)Application.Current.Properties["id"];
+            var user = await App.Database.GetUserAsync(id);
+            user.loggedIn = false;
+            await App.Database.SaveUserAsync(user);
+
+            await Navigation.PushModalAsync(new
+                                NavigationPage(new LoginPage())
+            {
+                BarBackgroundColor = Color.FromHex("#1E1E24"),
+                BarTextColor = Color.White
+            });
+        }
     }
 }

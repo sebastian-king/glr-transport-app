@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using glr.Models;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace glr.Views
@@ -21,38 +21,85 @@ namespace glr.Views
                 Password = passwordEntry.Text
             };
 
-            var isValid = CorrectCredentials(user);
+            var listOfUsers = await App.Database.GetUsersAsync();
 
-            if (isValid)
+            if(user.EmailAddress.Equals("Admin") && user.Password.Equals("pass"))
             {
-                await Navigation.PushModalAsync(
-                    new NavigationPage(new RegularEmployeeHomePage())
-                    {
-                        BarBackgroundColor = Color.FromHex("#1E1E24"),
-                        BarTextColor = Color.White
-                    });
-            }
-            else
-            {
-                await Navigation.PushModalAsync(
-                    new NavigationPage(new HomePage())
-                    {
-                        BarBackgroundColor = Color.FromHex("#1E1E24"),
-                        BarTextColor = Color.White
-                    });
+                User Admin = new User();
+                await Navigation.PushModalAsync(new
+                                NavigationPage(new HomePage(Admin))
+                {
+                    BarBackgroundColor = Color.FromHex("#1E1E24"),
+                    BarTextColor = Color.White
+                });
             }
 
+            if (user.EmailAddress == null || user.Password == null)
+                await DisplayAlert("Empty Fields", "All fields must be filled out", "Ok");
+            else if(AreCredentialsCorrect(user, listOfUsers))
+            {
+                foreach(var userFromList in listOfUsers)
+                {
+                    if(userFromList.loggedIn == true)
+                    {
+                        Application.Current.Properties["id"] = userFromList.ID;
+
+                        if (userFromList.TypeOfEmployee == 0)
+                        {
+                            Console.WriteLine("manager");
+                            await Navigation.PushModalAsync(new
+                                NavigationPage(new HomePage(userFromList))
+                            {
+                                BarBackgroundColor = Color.FromHex("#1E1E24"),
+                                BarTextColor = Color.White
+                            });
+
+                            break;
+                        }
+
+                        if (userFromList.TypeOfEmployee == 1)
+                        {
+                            Console.WriteLine("Driver");
+                            await Navigation.PushModalAsync(new
+                                NavigationPage(new RegularEmployeeHomePage(userFromList))
+                            {
+                                BarBackgroundColor = Color.FromHex("#1E1E24"),
+                                BarTextColor = Color.White
+                            });
+
+                            break;
+                        }
+
+                        if (userFromList.TypeOfEmployee == 2)
+                        {
+                            Console.WriteLine("Employee");
+                            await Navigation.PushModalAsync(new
+                                NavigationPage(new RegularEmployeeHomePage(userFromList))
+                            {
+                                BarBackgroundColor = Color.FromHex("#1E1E24"),
+                                BarTextColor = Color.White
+                            });
+
+                            break;
+                        }
+                    } 
+                }
+            }else await DisplayAlert("Invalid user", "Reenter email or password", "Ok");
         }
 
-        bool CorrectCredentials(User user)
+        public bool AreCredentialsCorrect(User user, List<User> users)
         {
-            Console.WriteLine(user.EmailAddress);
-            Console.WriteLine(user.Password);
-
-            if(user.EmailAddress.ToLower().Equals("jimmy") &&
-                (user.Password.ToLower().Equals("pass")))
+            foreach(var u in users)
             {
-                return true;
+                Console.WriteLine(u.EmailAddress);
+                Console.WriteLine(u.Password);
+                if (u.EmailAddress.ToLower().Equals(user.EmailAddress.ToLower())
+                    && u.Password.ToLower().Equals(user.Password.ToLower()))
+                {
+                    u.loggedIn = true;
+                    App.Database.SaveUserAsync(u);
+                    return true; 
+                }
             }
 
             return false;
